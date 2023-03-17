@@ -47,7 +47,7 @@ public class PizzasController : ControllerBase
         {
             return NotFound();
         }
-        BD.InsertarPizzas(pizza);
+        BD.UpdateById(pizza);
         return Ok();
     }
 
